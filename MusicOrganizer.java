@@ -73,6 +73,10 @@ public class MusicOrganizer
         return tracks.size();
     }
     
+    /**
+     * Play a random track.
+     * @param the index of the track to be played.
+     */
     public void randomTrack(int index) {
         int trackNumber = getNumberOfTracks();
         int rindex = randomtrack.nextInt(trackNumber);
@@ -83,7 +87,32 @@ public class MusicOrganizer
             System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
         }
     }
-   
+    
+    /**
+     * Randomly play every track once.
+     */
+    public void playAllRandom() {
+        int rIndex;
+        int[] PlayList = new int[tracks.size()];
+        
+        for (int i = 0; i < tracks.size(); i++) {
+            PlayList[i] = i;
+        }
+        
+        for(int i = tracks.size() - 1; i > 0; i--) {
+           rIndex = randomtrack.nextInt(i+1);
+           int r = PlayList[rIndex];
+           PlayList[rIndex] = PlayList[i];
+           PlayList[i] = r;
+        }
+        
+        for(int i = 0; i < tracks.size(); i++) {
+            System.out.println(PlayList[i]);
+            int song = PlayList[i];
+            playTrack(song);
+        }
+    }
+    
     /**
      * List a track from the collection.
      * @param index The index of the track to be listed.
