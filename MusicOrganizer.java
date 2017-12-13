@@ -6,7 +6,8 @@ import java.util.Random;
  * Individual tracks may be played.
  * 
  * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
+ * @author Cameron Brightwell
+ * @version 2017
  */
 public class MusicOrganizer
 {
@@ -205,6 +206,10 @@ public class MusicOrganizer
         return valid;
     }
     
+    /**
+     * Read the library of tracks.
+     * @param String folderName
+     */
     private void readLibrary(String folderName)
     {
         ArrayList<Track> tempTracks = reader.readTracks(folderName, ".mp3");

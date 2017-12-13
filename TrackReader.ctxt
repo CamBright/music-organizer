@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=TrackReader
-comment0.text=\n\ A\ helper\ class\ for\ our\ music\ application.\ This\ class\ can\ read\ files\ from\ the\ file\ system\n\ from\ a\ given\ folder\ with\ a\ specified\ suffix.\ It\ will\ interpret\ the\ file\ name\ as\ artist/\n\ track\ title\ information.\n\ \n\ It\ is\ expected\ that\ file\ names\ of\ music\ tracks\ follow\ a\ standard\ format\ of\ artist\ name\n\ and\ track\ name,\ separated\ by\ a\ dash.\ For\ example\:\ TheBeatles-HereComesTheSun.mp3\n\ \n\ @author\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling\n\ @version\ 2016.02.29\n
+comment0.text=\n\ A\ helper\ class\ for\ our\ music\ application.\ This\ class\ can\ read\ files\ from\ the\ file\ system\n\ from\ a\ given\ folder\ with\ a\ specified\ suffix.\ It\ will\ interpret\ the\ file\ name\ as\ artist/\n\ track\ title\ information.\n\ \n\ It\ is\ expected\ that\ file\ names\ of\ music\ tracks\ follow\ a\ standard\ format\ of\ artist\ name\n\ and\ track\ name,\ separated\ by\ a\ dash.\ For\ example\:\ TheBeatles-HereComesTheSun.mp3\n\ \n\ @author\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling\n\ @author\ Cameron\ Brightwell\n\ @version\ 2017\n
 comment1.params=
 comment1.target=TrackReader()
 comment1.text=\n\ Create\ the\ track\ reader,\ ready\ to\ read\ tracks\ from\ the\ music\ library\ folder.\n
